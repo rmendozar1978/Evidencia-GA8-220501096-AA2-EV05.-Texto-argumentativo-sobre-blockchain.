@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="100%" height="100%" style="background:#0f172a; font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <linearGradient id="gradCentral" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+    <linearGradient id="gradNode" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="gradChain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="480" y="40" fill="#f8fafc" font-size="22" font-weight="bold" text-anchor="middle">ARQUITECTURA DE RED: SISTEMA CENTRALIZADO VS. BLOCKCHAIN (P2P)</text>
+  <text x="480" y="65" fill="#94a3b8" font-size="13" text-anchor="middle">Evidencia GA8-220501096-AA2-EV05 | SENA - Centro de Formación ADSO</text>
+
+  <!-- Divider -->
+  <line x1="480" y1="90" x2="480" y2="480" stroke="#334155" stroke-dasharray="6,6" stroke-width="2"/>
+
+  <!-- LEFT: CENTRALIZED SYSTEM -->
+  <rect x="30" y="90" width="420" height="390" rx="12" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+  <text x="240" y="125" fill="#f87171" font-size="18" font-weight="bold" text-anchor="middle">1. Sistema Centralizado (Tradicional)</text>
+  <text x="240" y="145" fill="#94a3b8" font-size="12" text-anchor="middle">Intermediario único (Bancos, Servidores Centrales)</text>
+
+  <!-- Central Server/Bank -->
+  <circle cx="240" cy="270" r="46" fill="url(#gradCentral)" stroke="#fca5a5" stroke-width="3" filter="url(#glow)"/>
+  <text x="240" y="265" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">BANCO /</text>
+  <text x="240" y="282" fill="#ffffff" font-size="12" font-weight="bold" text-anchor="middle">ENTIDAD</text>
+
+  <!-- Centralized Clients -->
+  <!-- Client 1 -->
+  <line x1="120" y1="190" x2="200" y2="245" stroke="#ef4444" stroke-width="2.5"/>
+  <circle cx="120" cy="190" r="26" fill="#334155" stroke="#f87171" stroke-width="2"/>
+  <text x="120" y="195" fill="#f8fafc" font-size="11" font-weight="bold" text-anchor="middle">Pepito</text>
+
+  <!-- Client 2 -->
+  <line x1="360" y1="190" x2="280" y2="245" stroke="#ef4444" stroke-width="2.5"/>
+  <circle cx="360" cy="190" r="26" fill="#334155" stroke="#f87171" stroke-width="2"/>
+  <text x="360" y="195" fill="#f8fafc" font-size="11" font-weight="bold" text-anchor="middle">Mario</text>
+
+  <!-- Client 3 -->
+  <line x1="100" y1="350" x2="198" y2="295" stroke="#ef4444" stroke-width="2.5"/>
+  <circle cx="100" cy="350" r="26" fill="#334155" stroke="#f87171" stroke-width="2"/>
+  <text x="100" y="355" fill="#f8fafc" font-size="11" font-weight="bold" text-anchor="middle">Usuario C</text>
+
+  <!-- Client 4 -->
+  <line x1="380" y1="350" x2="282" y2="295" stroke="#ef4444" stroke-width="2.5"/>
+  <circle cx="380" cy="350" r="26" fill="#334155" stroke="#f87171" stroke-width="2"/>
+  <text x="380" y="355" fill="#f8fafc" font-size="11" font-weight="bold" text-anchor="middle">Usuario D</text>
+
+  <!-- Centralized Highlights -->
+  <rect x="50" y="415" width="380" height="50" rx="8" fill="#0f172a" stroke="#ef4444" stroke-width="1"/>
+  <text x="240" y="435" fill="#fca5a5" font-size="11" text-anchor="middle">✗ Punto único de fallo (Single Point of Failure)</text>
+  <text x="240" y="452" fill="#94a3b8" font-size="11" text-anchor="middle">✗ Requiere confianza absoluta en el intermediario + Comisiones</text>
+
+
+  <!-- RIGHT: DECENTRALIZED BLOCKCHAIN -->
+  <rect x="510" y="90" width="420" height="390" rx="12" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+  <text x="720" y="125" fill="#38bdf8" font-size="18" font-weight="bold" text-anchor="middle">2. Red Blockchain (P2P Descentralizada)</text>
+  <text x="720" y="145" fill="#94a3b8" font-size="12" text-anchor="middle">Libro mayor distribuido sin intermediarios centrales</text>
+
+  <!-- P2P Interconnection Lines (Mesh) -->
+  <line x1="620" y1="210" x2="820" y2="210" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="4,2"/>
+  <line x1="620" y1="210" x2="720" y2="290" stroke="#38bdf8" stroke-width="1.8"/>
+  <line x1="820" y1="210" x2="720" y2="290" stroke="#38bdf8" stroke-width="1.8"/>
+  <line x1="620" y1="210" x2="640" y2="370" stroke="#38bdf8" stroke-width="1.8"/>
+  <line x1="820" y1="210" x2="800" y2="370" stroke="#38bdf8" stroke-width="1.8"/>
+  <line x1="640" y1="370" x2="800" y2="370" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="4,2"/>
+  <line x1="640" y1="370" x2="720" y2="290" stroke="#10b981" stroke-width="2.2"/>
+  <line x1="800" y1="370" x2="720" y2="290" stroke="#10b981" stroke-width="2.2"/>
+  <line x1="620" y1="210" x2="800" y2="370" stroke="#334155" stroke-width="1"/>
+  <line x1="820" y1="210" x2="640" y2="370" stroke="#334155" stroke-width="1"/>
+
+  <!-- P2P Nodes -->
+  <!-- Node 1 (Pepito) -->
+  <circle cx="620" cy="210" r="30" fill="url(#gradNode)" stroke="#7dd3fc" stroke-width="2.5" filter="url(#glow)"/>
+  <text x="620" y="208" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">Nodo A</text>
+  <text x="620" y="222" fill="#e0f2fe" font-size="10" text-anchor="middle">(Pepito)</text>
+
+  <!-- Node 2 (Mario) -->
+  <circle cx="820" cy="210" r="30" fill="url(#gradNode)" stroke="#7dd3fc" stroke-width="2.5" filter="url(#glow)"/>
+  <text x="820" y="208" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">Nodo B</text>
+  <text x="820" y="222" fill="#e0f2fe" font-size="10" text-anchor="middle">(Mario)</text>
+
+  <!-- Node 3 (Validator / Miner) -->
+  <circle cx="720" cy="290" r="36" fill="url(#gradChain)" stroke="#6ee7b7" stroke-width="3" filter="url(#glow)"/>
+  <text x="720" y="287" fill="#ffffff" font-size="11" font-weight="bold" text-anchor="middle">Nodo Minero</text>
+  <text x="720" y="302" fill="#d1fae5" font-size="10" text-anchor="middle">Validador PoW</text>
+
+  <!-- Node 4 -->
+  <circle cx="640" cy="370" r="28" fill="url(#gradNode)" stroke="#7dd3fc" stroke-width="2"/>
+  <text x="640" y="372" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">Nodo C</text>
+  <text x="640" y="384" fill="#e0f2fe" font-size="9" text-anchor="middle">Copia Ledger</text>
+
+  <!-- Node 5 -->
+  <circle cx="800" cy="370" r="28" fill="url(#gradNode)" stroke="#7dd3fc" stroke-width="2"/>
+  <text x="800" y="372" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">Nodo D</text>
+  <text x="800" y="384" fill="#e0f2fe" font-size="9" text-anchor="middle">Copia Ledger</text>
+
+  <!-- Decentralized Highlights -->
+  <rect x="530" y="415" width="380" height="50" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+  <text x="720" y="435" fill="#6ee7b7" font-size="11" text-anchor="middle">✓ Red P2P Resiliente (Sin intermediarios ni punto de falla)</text>
+  <text x="720" y="452" fill="#94a3b8" font-size="11" text-anchor="middle">✓ Consenso Criptográfico Distribuido + Inmutabilidad Absoluta</text>
+</svg>

@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="100%" height="100%" style="background:#0b1120; font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="hashGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="genesisGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="500" y="42" fill="#f8fafc" font-size="22" font-weight="bold" text-anchor="middle">ANATOMÍA DEL BLOQUE Y ENCADENAMIENTO CRIPTOGRÁFICO HASH (SHA-256)</text>
+  <text x="500" y="66" fill="#94a3b8" font-size="13" text-anchor="middle">Demostración técnica de Inmutabilidad y Relación entre Bloques | SENA ADSO GA8-220501096-AA2-EV05</text>
+
+  <!-- ================= BLOCK 0 (GENESIS) ================= -->
+  <g transform="translate(40, 95)">
+    <!-- Card Frame -->
+    <rect x="0" y="0" width="270" height="360" rx="10" fill="#1e293b" stroke="#8b5cf6" stroke-width="2"/>
+    <rect x="0" y="0" width="270" height="42" rx="10" fill="url(#genesisGrad)"/>
+    <text x="135" y="27" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">BLOQUE 0 (GÉNESIS)</text>
+
+    <!-- Header Fields -->
+    <rect x="12" y="52" width="246" height="150" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="22" y="72" fill="#a78bfa" font-size="11" font-weight="bold">ENCABEZADO (BLOCK HEADER):</text>
+    <text x="22" y="92" fill="#94a3b8" font-size="10">Index: <tspan fill="#f8fafc">0</tspan></text>
+    <text x="22" y="110" fill="#94a3b8" font-size="10">Prev Hash: <tspan fill="#ec4899">0000000000000000...</tspan></text>
+    <text x="22" y="128" fill="#94a3b8" font-size="10">Timestamp: <tspan fill="#f8fafc">2009-01-03 18:15:05</tspan></text>
+    <text x="22" y="146" fill="#94a3b8" font-size="10">Merkle Root: <tspan fill="#f8fafc">4a5e1e4baab89f3a...</tspan></text>
+    <text x="22" y="164" fill="#94a3b8" font-size="10">Dificultad (Bits): <tspan fill="#f8fafc">4 ceros iniciales</tspan></text>
+    <text x="22" y="182" fill="#94a3b8" font-size="10">Nonce: <tspan fill="#fbbf24">2083236893</tspan></text>
+
+    <!-- Body / Data -->
+    <rect x="12" y="210" width="246" height="85" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="22" y="230" fill="#38bdf8" font-size="11" font-weight="bold">CUERPO (TRANSACCIONES):</text>
+    <text x="22" y="250" fill="#cbd5e1" font-size="10">• Tx Génesis: Recompensa 50 BTC</text>
+    <text x="22" y="268" fill="#cbd5e1" font-size="10">• Mensaje: The Times 03/Jan/2009</text>
+    <text x="22" y="284" fill="#64748b" font-size="9">(Total transacciones: 1)</text>
+
+    <!-- Output Hash -->
+    <rect x="12" y="303" width="246" height="45" rx="6" fill="#1e1b4b" stroke="#8b5cf6" stroke-width="1.2"/>
+    <text x="22" y="320" fill="#a78bfa" font-size="9" font-weight="bold">HASH BLOQUE ACTUAL (SHA-256):</text>
+    <text x="22" y="337" fill="#c4b5fd" font-size="9" font-family="monospace" font-weight="bold">000000000019d6689c085ae1...</text>
+  </g>
+
+  <!-- Cryptographic Link 0 -> 1 -->
+  <path d="M 310 415 C 340 415, 340 205, 368 205" fill="none" stroke="#38bdf8" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <rect x="315" y="285" width="46" height="22" rx="4" fill="#0369a1"/>
+  <text x="338" y="300" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">LIGA</text>
+
+  <!-- ================= BLOCK 1 ================= -->
+  <g transform="translate(370, 95)">
+    <!-- Card Frame -->
+    <rect x="0" y="0" width="270" height="360" rx="10" fill="#1e293b" stroke="#0284c7" stroke-width="2"/>
+    <rect x="0" y="0" width="270" height="42" rx="10" fill="url(#hashGrad)"/>
+    <text x="135" y="27" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">BLOQUE 1</text>
+
+    <!-- Header Fields -->
+    <rect x="12" y="52" width="246" height="150" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="22" y="72" fill="#38bdf8" font-size="11" font-weight="bold">ENCABEZADO (BLOCK HEADER):</text>
+    <text x="22" y="92" fill="#94a3b8" font-size="10">Index: <tspan fill="#f8fafc">1</tspan></text>
+    <text x="22" y="110" fill="#94a3b8" font-size="10">Prev Hash: <tspan fill="#c4b5fd" font-family="monospace">000000000019d668...</tspan></text>
+    <text x="22" y="128" fill="#94a3b8" font-size="10">Timestamp: <tspan fill="#f8fafc">2009-01-09 02:54:25</tspan></text>
+    <text x="22" y="146" fill="#94a3b8" font-size="10">Merkle Root: <tspan fill="#f8fafc">0e3e2357e806b6cd...</tspan></text>
+    <text x="22" y="164" fill="#94a3b8" font-size="10">Dificultad (Bits): <tspan fill="#f8fafc">Target PoW</tspan></text>
+    <text x="22" y="182" fill="#94a3b8" font-size="10">Nonce: <tspan fill="#fbbf24">2573398261</tspan></text>
+
+    <!-- Body / Data -->
+    <rect x="12" y="210" width="246" height="85" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="22" y="230" fill="#38bdf8" font-size="11" font-weight="bold">CUERPO (TRANSACCIONES):</text>
+    <text x="22" y="250" fill="#cbd5e1" font-size="10">• Pepito -> Mario: 5.5 BTC</text>
+    <text x="22" y="268" fill="#cbd5e1" font-size="10">• Carlos -> Laura: 1.2 BTC</text>
+    <text x="22" y="284" fill="#64748b" font-size="9">(Hasta 2400 transacciones)</text>
+
+    <!-- Output Hash -->
+    <rect x="12" y="303" width="246" height="45" rx="6" fill="#082f49" stroke="#0284c7" stroke-width="1.2"/>
+    <text x="22" y="320" fill="#7dd3fc" font-size="9" font-weight="bold">HASH BLOQUE ACTUAL (SHA-256):</text>
+    <text x="22" y="337" fill="#e0f2fe" font-size="9" font-family="monospace" font-weight="bold">000000000028a05374465... </text>
+  </g>
+
+  <!-- Cryptographic Link 1 -> 2 -->
+  <path d="M 640 415 C 670 415, 670 205, 698 205" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#arrowGreen)"/>
+  <rect x="645" y="285" width="46" height="22" rx="4" fill="#047857"/>
+  <text x="668" y="300" fill="#ffffff" font-size="10" font-weight="bold" text-anchor="middle">LIGA</text>
+
+  <!-- ================= BLOCK 2 ================= -->
+  <g transform="translate(700, 95)">
+    <!-- Card Frame -->
+    <rect x="0" y="0" width="270" height="360" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="2"/>
+    <rect x="0" y="0" width="270" height="42" rx="10" fill="url(#genesisGrad)"/>
+    <rect x="0" y="0" width="270" height="42" rx="10" fill="#047857"/>
+    <text x="135" y="27" fill="#ffffff" font-size="15" font-weight="bold" text-anchor="middle">BLOQUE 2</text>
+
+    <!-- Header Fields -->
+    <rect x="12" y="52" width="246" height="150" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="22" y="72" fill="#34d399" font-size="11" font-weight="bold">ENCABEZADO (BLOCK HEADER):</text>
+    <text x="22" y="92" fill="#94a3b8" font-size="10">Index: <tspan fill="#f8fafc">2</tspan></text>
+    <text x="22" y="110" fill="#94a3b8" font-size="10">Prev Hash: <tspan fill="#7dd3fc" font-family="monospace">000000000028a053...</tspan></text>
+    <text x="22" y="128" fill="#94a3b8" font-size="10">Timestamp: <tspan fill="#f8fafc">2009-01-09 03:02:11</tspan></text>
+    <text x="22" y="146" fill="#94a3b8" font-size="10">Merkle Root: <tspan fill="#f8fafc">9f84a1e9c20a4b88...</tspan></text>
+    <text x="22" y="164" fill="#94a3b8" font-size="10">Dificultad (Bits): <tspan fill="#f8fafc">Target PoW</tspan></text>
+    <text x="22" y="182" fill="#94a3b8" font-size="10">Nonce: <tspan fill="#fbbf24">1639582049</tspan></text>
+
+    <!-- Body / Data -->
+    <rect x="12" y="210" width="246" height="85" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <text x="22" y="230" fill="#34d399" font-size="11" font-weight="bold">CUERPO (TRANSACCIONES):</text>
+    <text x="22" y="250" fill="#cbd5e1" font-size="10">• Mario -> Tienda X: 0.5 BTC</text>
+    <text x="22" y="268" fill="#cbd5e1" font-size="10">• Smart Contract Execution #401</text>
+    <text x="22" y="284" fill="#64748b" font-size="9">(Lote validado por consenso)</text>
+
+    <!-- Output Hash -->
+    <rect x="12" y="303" width="246" height="45" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
+    <text x="22" y="320" fill="#6ee7b7" font-size="9" font-weight="bold">HASH BLOQUE ACTUAL (SHA-256):</text>
+    <text x="22" y="337" fill="#d1fae5" font-size="9" font-family="monospace" font-weight="bold">00000000004f128bc991a... </text>
+  </g>
+
+  <!-- Bottom Explanatory Banner: Inmutability Principle -->
+  <rect x="40" y="480" width="930" height="70" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="60" y="505" fill="#38bdf8" font-size="13" font-weight="bold">🛡️ PRINCIPIO MATEMÁTICO DE INMUTABILIDAD (EFECTO AVALANCHA DE HASH):</text>
+  <text x="60" y="525" fill="#f1f5f9" font-size="11.5">Si un atacante modifica maliciosamente un solo carácter en las transacciones del <tspan fill="#fbbf24" font-weight="bold">Bloque 1</tspan>, su Hash cambia radicalmente.</text>
+  <text x="60" y="542" fill="#fca5a5" font-size="11.5">Como el <tspan fill="#34d399" font-weight="bold">Bloque 2</tspan> almacena el Hash anterior exacto, la discrepancia invalida automáticamente toda la cadena subsiguiente ante los demás nodos de la red P2P.</text>
+</svg>

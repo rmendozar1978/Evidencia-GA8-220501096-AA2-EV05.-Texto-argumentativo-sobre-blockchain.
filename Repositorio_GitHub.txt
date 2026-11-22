@@ -1,0 +1,49 @@
+================================================================================
+SERVICIO NACIONAL DE APRENDIZAJE - SENA
+TECNÓLOGO EN ANÁLISIS Y DESARROLLO DE SOFTWARE (ADSO)
+FICHA: 3235898
+CENTRO DE SERVICIOS DE SALUD - REGIONAL ANTIOQUIA
+================================================================================
+
+FICHA TÉCNICA DE ENTREGA DE EVIDENCIA
+
+• Actividad de Aprendizaje: 
+  GA8-220501096-AA2 - Incorporar tecnologías emergentes y disruptivas, de acuerdo con el diseño establecido.
+
+• Resultado de Aprendizaje: 
+  220501096-04 - Codificar el software de acuerdo con el diseño establecido.
+
+• Criterio de Evaluación: 
+  Incorpora tecnologías emergentes y disruptivas de acuerdo con los propósitos del software.
+
+• Nombre de la Evidencia: 
+  GA8-220501096-AA2-EV05. Texto argumentativo sobre blockchain.
+
+• Aprendiz: 
+  Ronald Fabian Mendoza Rodriguez
+  Juan Sebastián Avila
+
+• Correo Electrónico: 
+  rmendozar1978@gmail.com
+
+• Repositorio Oficial en GitHub: 
+  https://github.com/rmendozar1978/Evidencia-GA8-220501096-AA2-EV05.-Texto-argumentativo-sobre-blockchain..git
+
+• Rama Principal: 
+  main
+
+• URL Directa de la Evidencia en GitHub:
+  https://github.com/rmendozar1978/Evidencia-GA8-220501096-AA2-EV05.-Texto-argumentativo-sobre-blockchain.
+
+• Documentos Principales Incluidos:
+  - docs/Texto_Argumentativo_Blockchain_GA8_220501096_AA2_EV05.md (Ensayo Formal > 3 páginas)
+  - docs/Texto_Argumentativo_Blockchain_GA8_220501096_AA2_EV05.html (Versión Editorial Imprimible)
+  - docs/Prompt_Maestro_Ingenieria_EV05.md (Prompt CO-STAR de Ingeniería de Prompts)
+  - diagramas/red_blockchain_vs_centralizada.svg (Diagrama Vectorial de Red P2P vs Centralizada)
+  - diagramas/anatomia_bloque_y_cadena.svg (Diagrama de Anatomía de Bloques y Enlace Hash SHA-256)
+  - simulador_blockchain/blockchain.py (Simulador Algorítmico Funcional)
+  - simulador_blockchain/test_blockchain.py (Suite de 7 Pruebas Unitarias Automatizadas)
+
+• Estado del Software: 
+  100% Funcional y Probado (7 de 7 pruebas unitarias aprobadas, 0 errores).
+================================================================================

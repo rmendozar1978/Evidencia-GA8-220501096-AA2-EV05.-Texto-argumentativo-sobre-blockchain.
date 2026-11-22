@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texto Argumentativo sobre Blockchain | GA8-220501096-AA2-EV05 - SENA</title>
+  <style>
+    :root {
+      --primary-color: #00324d;
+      --secondary-color: #39a900;
+      --accent-color: #0284c7;
+      --text-color: #1e293b;
+      --bg-light: #f8fafc;
+      --border-color: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      font-size: 11pt;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: #f1f5f9;
+      padding: 20px;
+    }
+
+    .document-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 50px 60px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+    }
+
+    /* Institutional Header */
+    .sena-header {
+      border-bottom: 3px solid var(--secondary-color);
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .sena-title {
+      font-size: 15pt;
+      font-weight: 800;
+      color: var(--primary-color);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .sena-subtitle {
+      font-size: 10pt;
+      color: #64748b;
+      margin-top: 3px;
+    }
+
+    .sena-badge {
+      background: var(--primary-color);
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 9pt;
+      font-weight: 600;
+    }
+
+    /* Main Title Area */
+    .title-box {
+      background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
+      border-left: 6px solid var(--secondary-color);
+      padding: 25px 30px;
+      border-radius: 4px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 19pt;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 20px;
+      font-size: 9.5pt;
+      color: #475569;
+      margin-top: 15px;
+      border-top: 1px dashed #cbd5e1;
+      padding-top: 12px;
+    }
+
+    .meta-item strong {
+      color: var(--primary-color);
+    }
+
+    /* Headings */
+    h2 {
+      font-size: 13.5pt;
+      color: var(--primary-color);
+      border-bottom: 1.5px solid var(--border-color);
+      padding-bottom: 6px;
+      margin-top: 30px;
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 11.5pt;
+      color: var(--accent-color);
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 14px;
+      text-indent: 1.5em;
+    }
+
+    p.no-indent {
+      text-indent: 0;
+    }
+
+    /* Callouts & Premisas */
+    .thesis-callout {
+      background: #eff6ff;
+      border-left: 5px solid #2563eb;
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 0 6px 6px 0;
+      font-style: italic;
+    }
+
+    .thesis-callout strong {
+      color: #1d4ed8;
+      font-style: normal;
+    }
+
+    .premise-box {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin: 15px 0;
+    }
+
+    .premise-title {
+      font-weight: bold;
+      color: var(--primary-color);
+      font-size: 10pt;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    /* Lists */
+    ul, ol {
+      margin-left: 30px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      margin-bottom: 6px;
+      text-align: justify;
+    }
+
+    /* Diagram Containers */
+    .diagram-figure {
+      background: #0f172a;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 25px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .diagram-figure img, .diagram-figure svg {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .diagram-caption {
+      color: #94a3b8;
+      font-size: 9pt;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    /* Code Blocks */
+    pre {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 14px 18px;
+      border-radius: 6px;
+      font-size: 9pt;
+      font-family: 'Consolas', 'Courier New', monospace;
+      overflow-x: auto;
+      margin: 15px 0;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 9.5pt;
+    }
+
+    th, td {
+      border: 1px solid var(--border-color);
+      padding: 10px 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f1f5f9;
+      color: var(--primary-color);
+      font-weight: 700;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    /* References */
+    .reference-list {
+      font-size: 9.5pt;
+      line-height: 1.5;
+    }
+
+    .reference-item {
+      padding-left: 2em;
+      text-indent: -2em;
+      margin-bottom: 8px;
+    }
+
+    /* Page Breaks for Print */
+    @media print {
+      body {
+        background: transparent;
+        padding: 0;
+        font-size: 10pt;
+      }
+      .document-container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+      .diagram-figure {
+        background: #ffffff !important;
+        border: 1px solid #cbd5e1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="document-container">
+  <!-- Header Institucional -->
+  <header class="sena-header">
+    <div>
+      <div class="sena-title">Servicio Nacional de Aprendizaje - SENA</div>
+      <div class="sena-subtitle">Regional Antioquia | Centro de Servicios de Salud | Ficha: 3235898</div>
+      <div class="sena-subtitle">Programa: Tecnólogo en Análisis y Desarrollo de Software (ADSO)</div>
+    </div>
+    <div class="sena-badge">Evidencia Oficial</div>
+  </header>
+
+  <!-- Caja de Título y Ficha de Evidencia -->
+  <section class="title-box">
+    <h1>TEXTO ARGUMENTATIVO SOBRE BLOCKCHAIN</h1>
+    <div style="font-size: 12pt; color: #0369a1; font-weight: 600;">
+      La Descentralización Criptográfica como Paradigma de Confianza e Integridad en el Software Moderno
+    </div>
+    
+    <div class="meta-grid">
+      <div class="meta-item"><strong>Actividad de Aprendizaje:</strong> GA8-220501096-AA2</div>
+      <div class="meta-item"><strong>Resultado de Aprendizaje:</strong> 220501096-04</div>
+      <div class="meta-item"><strong>Evidencia de Producto:</strong> GA8-220501096-AA2-EV05</div>
+      <div class="meta-item"><strong>Criterio de Evaluación:</strong> Incorpora tecnologías emergentes y disruptivas de acuerdo con los propósitos del software.</div>
+      <div class="meta-item"><strong>Aprendiz:</strong> Ronald Fabian Mendoza Rodriguez</div>
+      <div class="meta-item"><strong>Contacto:</strong> rmendozar1978@gmail.com</div>
+    </div>
+  </section>
+
+  <!-- Resumen -->
+  <h2>Resumen</h2>
+  <p class="no-indent">
+    El presente documento desarrolla un texto argumentativo formal de más de tres páginas académicas acerca de la tecnología <strong>Blockchain (cadena de bloques)</strong>. La argumentación se fundamenta en la formulación de una premisa mayor (tesis central), premisas de sustento técnico y una conclusión lógica ineludible: la cadena de bloques es una tecnología disruptiva de la Industria 4.0 que sustituye la necesidad de intermediarios centralizados por un modelo de gobernanza matemática inmutable, transparente y seguro. Se abordan de manera sistemática los antecedentes teóricos de 1991, el nacimiento de Bitcoin en 2008 con Satoshi Nakamoto, los contratos inteligentes con Ethereum, el rol de la criptografía asimétrica y las funciones hash SHA-256, la anatomía de los bloques, el mecanismo de consenso Proof-of-Work, productos reales en el mercado (IBM Food Trust, Pylon Network, Steemit, Koibanx) y un simulador funcional de software con pruebas unitarias que certifica el resultado de aprendizaje de codificación de software.
+  </p>
+
+  <!-- Sección 1 -->
+  <h2>1. Introducción y Tesis Central (Premisa y Conclusión)</h2>
+  <p>
+    Todo argumento riguroso parte de una relación lógica entre premisas e inferencias. En las ciencias de la computación contemporáneas, los sistemas centralizados tradicionales han presentado dos limitaciones estructurales: la dependencia forzosa de terceros fiduciarios (bancos, notarías, servidores centrales) que monopolizan las tarifas y los tiempos de procesamiento, y la presencia de un <strong>Punto Único de Fallo (Single Point of Failure)</strong>, vulnerable a fraudes internos, caídas de infraestructura y censura arbitraria.
+  </p>
+
+  <div class="thesis-callout">
+    <strong>Tesis Central (Premisa Mayor):</strong> La tecnología Blockchain constituye un cambio de paradigma computacional disruptivo, debido a que traslada el fundamento de la confianza humana desde instituciones intermediarias falibles hacia un protocolo criptográfico distribuido, inmutable y verificable por cualquier participante de la red P2P.
+  </div>
+
+  <p>
+    A partir de esta afirmación, el texto presentará el razonamiento estructurado con base en la teoría criptográfica, la ingeniería de software y los materiales oficiales del componente formativo del SENA (2024), demostrando cómo la convergencia de algoritmos hash, redes entre pares y mecanismos de consenso valida de forma formal nuestra postura.
+  </p>
+
+  <!-- Sección 2 -->
+  <h2>2. Marco Conceptual: ¿Qué es la Tecnología y la Disrupción?</h2>
+  <p>
+    En términos generales, la <strong>tecnología</strong> es el conjunto ordenado de conocimientos teóricos, herramientas, protocolos y procedimientos técnicos que el ser humano utiliza para transformar el entorno y solucionar problemas complejos. Cuando una innovación introduce mejoras graduales sobre un proceso existente (como aumentar la velocidad de un procesador), se denomina innovación incremental.
+  </p>
+  <p>
+    Sin embargo, tal como lo define el componente formativo del SENA (2024) y la literatura de gestión tecnológica (Vidal et al., 2019), la palabra <strong>disruptiva</strong> (proveniente del francés *disruptif* y del latín *disrumpere*, fracturar o romper) califica a aquellas innovaciones que provocan una mutación concluyente y radical en los modelos de negocio y de servicios. Blockchain, al igual que la Inteligencia Artificial y el Internet de las Cosas (IoT), no mejora la intermediación bancaria: <strong>la elimina por completo</strong>, reconfigurando la confianza en un entorno puramente digital.
+  </p>
+
+  <!-- Sección 3 -->
+  <h2>3. Objetivos de la Tecnología Blockchain</h2>
+  <p>
+    El diseño de la cadena de bloques persigue metas precisas que trascienden el ámbito monetario:
+  </p>
+  <ul>
+    <li><strong>Descentralización Absoluta:</strong> Transferir el control y la toma de decisiones desde una entidad individual (gobierno, corporación o banco) hacia una red distribuida de participantes iguales.</li>
+    <li><strong>Eliminación de Intermediarios:</strong> Permitir transferencias directas de valor y datos punto a punto (Peer-to-Peer - P2P), suprimiendo comisiones abusivas y demoras burocráticas.</li>
+    <li><strong>Inmutabilidad Criptográfica:</strong> Impedir que cualquier registro validado pueda ser borrado, sobreescrito o falsificado en el tiempo.</li>
+    <li><strong>Transparencia y Verificabilidad Pública:</strong> Posibilitar que cualquier auditor o ciudadano consulte el libro de cuentas íntegro en tiempo real.</li>
+    <li><strong>Alta Tolerancia a Fallos y Censura:</strong> Evitar la caída del sistema si caen nodos individuales, pues la información está replicada simultáneamente en miles de equipos en el planeta.</li>
+  </ul>
+
+  <div class="page-break"></div>
+
+  <!-- Sección 4 -->
+  <h2>4. Antecedentes Históricos y Evolución Cronológica</h2>
+  <p>
+    La narrativa común asocia el inicio de la cadena de bloques únicamente a Bitcoin. Sin embargo, su fundamentación matemática data de casi dos décadas atrás:
+  </p>
+  <ul>
+    <li><strong>1991 - 2008 (Stuart Haber y W. Scott Stornetta):</strong> Diseñaron el primer sistema criptográfico de cadena de bloques con marcas de tiempo (*timestamps*) inviolables para garantizar que documentos digitales no fueran alterados retroactivamente. En ese mismo año de 1991 incorporaron los <strong>Árboles de Merkle (Merkle Trees)</strong>, lo cual permitió empaquetar de forma eficiente cientos de transacciones en un solo bloque.</li>
+    <li><strong>2008 (Satoshi Nakamoto y el Whitepaper de Bitcoin):</strong> Tras la gran crisis financiera internacional provocada por la banca tradicional, una persona o grupo bajo el seudónimo de Satoshi Nakamoto publicó el artículo <em>"Bitcoin: A Peer-to-Peer Electronic Cash System"</em>, combinando por primera vez la red P2P, la prueba de trabajo (*Proof-of-Work*) de Adam Back y la criptografía de curvas elípticas.</li>
+    <li><strong>2009 (Bloque Génesis):</strong> El 3 de enero de 2009 se mina el Bloque #0 (Bloque Génesis), estableciendo el punto de partida inmutable de la red Bitcoin con una recompensa de 50 BTC.</li>
+    <li><strong>2013 - 2015 (Ethereum y Contratos Inteligentes):</strong> Vitalik Buterin concibe Ethereum (Blockchain 2.0). Introduce los <strong>Contratos Inteligentes (Smart Contracts)</strong>: código Turing-completo ejecutable en la red que automatiza acuerdos jurídicos y financieros de forma desatendida. En 2015 la Linux Foundation presenta <strong>Hyperledger</strong> para cadenas empresariales.</li>
+    <li><strong>2018 - Presente (Blockchain 3.0 y Web3):</strong> Proyectos como IOTA, NEO, Cardano y Polkadot resuelven problemas de escalabilidad y consumo energético, abriendo paso a las Finanzas Descentralizadas (DeFi), Tokenización de Activos Reales (RWA) y Web3.</li>
+  </ul>
+
+  <!-- Sección 5 -->
+  <h2>5. ¿En qué Consiste la Tecnología Blockchain?</h2>
+  <p>
+    En esencia, <strong>Blockchain es un libro mayor de contabilidad digital, descentralizado, distribuido y sincronizado entre múltiples nodos</strong>. Cada nodo de la red posee una copia exacta y en tiempo real de todo el historial de transacciones. 
+  </p>
+  <p>
+    A diferencia de las bases de datos convencionales donde un administrador con permisos `root` puede modificar o borrar filas (`UPDATE` o `DELETE`), en Blockchain el registro es exclusivamente de anexado continuo (`APPEND-ONLY`). La adición de un nuevo lote de datos solo se consuma cuando la mayoría de los nodos de la red valida criptográficamente que las firmas son legítimas y que no existe doble gasto, alcanzando lo que en ciencias computacionales se conoce como <em>Consenso Bizantino Tolerante a Fallas (BFT)</em>.
+  </p>
+
+  <!-- Sección 6 -->
+  <h2>6. La Criptografía como Soporte de la Seguridad</h2>
+  <p>
+    La <strong>criptografía</strong> es la disciplina matemática encargada de transformar información legible en un código cifrado ininteligible para cualquier actor no autorizado, garantizando confidencialidad, autenticidad, integridad y no repudio.
+  </p>
+  <p>
+    En Blockchain se hace un uso intensivo de la <strong>Criptografía Asimétrica (Par de Claves Pública y Privada)</strong>:
+  </p>
+  <ul>
+    <li><strong>Clave Privada:</strong> Es un número secreto conocido únicamente por el usuario. Permite firmar digitalmente cada transacción mediante algoritmos matemáticos como ECDSA (Elliptic Curve Digital Signature Algorithm).</li>
+    <li><strong>Clave Pública:</strong> Se deriva matemáticamente de la clave privada y se comparte abiertamente con la red (operando como una cuenta bancaria pública). Cualquier nodo puede verificar que la firma de una transacción fue generada con la clave privada auténtica sin necesidad de conocerla jamás.</li>
+  </ul>
+
+  <!-- Sección 7 -->
+  <h2>7. El Hash Criptográfico en Blockchain (SHA-256)</h2>
+  <p>
+    El <strong>Hash</strong> es una función matemática unidireccional que toma cualquier volumen de datos de entrada y devuelve una cadena de caracteres de tamaño fijo (por ejemplo, 64 dígitos hexadecimales en el algoritmo estándar <strong>SHA-256</strong>).
+  </p>
+  <p>
+    Sus características determinantes en Blockchain son:
+  </p>
+  <ul>
+    <li><strong>Determinismo:</strong> Una misma entrada siempre genera idéntico valor hash.</li>
+    <li><strong>Irreversibilidad (Unidireccional):</strong> Resulta computacionalmente imposible obtener los datos originales a partir de la salida hash.</li>
+    <li><strong>Efecto Avalancha:</strong> Si se altera una sola letra, coma o bit de la transacción, el hash resultante cambia completamente, alertando de forma instantánea a toda la red sobre la manipulación.</li>
+    <li><strong>Resistencia a Colisiones:</strong> Dos entradas diferentes jamás producirán el mismo hash.</li>
+  </ul>
+
+  <!-- Sección 8 -->
+  <h2>8. Concepto y Estructura de un Bloque</h2>
+  <p>
+    Un <strong>bloque</strong> es la unidad fundamental de empaquetamiento y certificación de datos en la red. Cuenta habitualmente con capacidad para almacenar entre <strong>2.000 y 2.400 transacciones</strong> verificadas. Estructuralmente se divide en dos componentes:
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Componente del Bloque</th>
+        <th>Descripción y Atributos Técnicos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Encabezado (Block Header)</strong></td>
+        <td>
+          • <em>Versión:</em> Identificador de reglas del software de la red.<br>
+          • <em>Previous Hash:</em> Puntero criptográfico al hash del bloque anterior.<br>
+          • <em>Merkle Root:</em> Hash raíz que resume criptográficamente todas las transacciones del bloque.<br>
+          • <em>Timestamp:</em> Marca temporal universal de creación del bloque.<br>
+          • <em>Bits / Dificultad:</em> Umbral de dificultad computacional requerido.<br>
+          • <em>Nonce:</em> Contador arbitrario que el minero modifica para resolver el acertijo de Proof-of-Work.
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Cuerpo del Bloque (Block Body)</strong></td>
+        <td>
+          • Transacción especial de recompensa al minero (Coinbase).<br>
+          • Lista completa de transacciones firmadas con claves privadas (monto, emisor, receptor, firma digital ECDSA).
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Identificador Hash del Bloque</strong></td>
+        <td>El resultado de hashear el encabezado con SHA-256 (debe cumplir la condición de ceros iniciales).</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="page-break"></div>
+
+  <!-- Sección 9 -->
+  <h2>9. Relación y Encadenamiento entre Bloques: Inmutabilidad Matemática</h2>
+  <p>
+    Los bloques no existen de forma aislada; forman una <strong>cadena secuencial estrictamente enlazada hacia atrás</strong>. Cada bloque hijo almacena como dato de entrada obligatorio en su encabezado el Hash exacto de su bloque padre (`previous_hash`).
+  </p>
+  <p>
+    Si un atacante lograse acceder al disco duro de un nodo e intentase modificar una transacción en el Bloque 1 (por ejemplo, cambiar el envío de un millón de pesos de Pepito a Mario):
+  </p>
+  <ol>
+    <li>El efecto avalancha de SHA-256 hace que el Hash del Bloque 1 cambie completamente.</li>
+    <li>El Bloque 2, que contiene grabado en su encabezado el `previous_hash` original del Bloque 1, detecta de inmediato la discrepancia y rompe la cadena lógica.</li>
+    <li>Para que los demás nodos de la red aceptaran ese fraude, el atacante estaría obligado a recalcular el Proof-of-Work (minar) del Bloque 1, del Bloque 2 y de todos los bloques minados con posterioridad más rápido que la suma de todos los supercomputadores honestos del planeta. Esta barrera matemática y económica es lo que hace a Blockchain prácticamente inmutable.</li>
+  </ol>
+
+  <!-- Sección 10: Gráficos de Arquitectura -->
+  <h2>10. Arquitectura de Red: Comparación Gráfica</h2>
+  <p class="no-indent">
+    A continuación se ilustra la diferencia arquitectónica fundamental entre un sistema financiero tradicional centralizado y una red distribuida de Blockchain:
+  </p>
+
+  <div class="diagram-figure">
+    <img src="../diagramas/red_blockchain_vs_centralizada.svg" alt="Diagrama de Arquitectura de Red Centralizada vs Blockchain P2P">
+    <div class="diagram-caption">Figura 1. Comparación entre la arquitectura centralizada cliente-servidor tradicional y la red distribuida entre pares (P2P) de Blockchain.</div>
+  </div>
+
+  <div class="diagram-figure">
+    <img src="../diagramas/anatomia_bloque_y_cadena.svg" alt="Diagrama de Anatomía del Bloque y Encadenamiento Criptográfico">
+    <div class="diagram-caption">Figura 2. Anatomía técnica del bloque y encadenamiento criptográfico secuencial mediante hashes SHA-256 y Proof-of-Work.</div>
+  </div>
+
+  <!-- Sección 11 -->
+  <h2>11. Productos y Casos de Uso en el Mundo Real</h2>
+  <p>
+    Lejos de ser una hipótesis de laboratorio, la tecnología Blockchain sustenta en la actualidad plataformas industriales de alto impacto:
+  </p>
+  <ul>
+    <li><strong>IBM Food Trust:</strong> Red empresarial construida sobre Hyperledger Fabric utilizada por minoristas multinacionales para certificar la trazabilidad alimentaria desde el campo hasta la mesa, garantizando inocuidad sanitaria y reduciendo pérdidas operativas.</li>
+    <li><strong>Pylon Network:</strong> Plataforma europea de código abierto diseñada para el intercambio y comercialización directa de energía solar y eólica entre hogares sin intermediación de distribuidoras tradicionales.</li>
+    <li><strong>Steemit:</strong> Red social descentralizada que premia el mérito y la generación de contenido mediante recompensas en tokens criptográficos nativos, eliminando la censura corporativa.</li>
+    <li><strong>Koibanx:</strong> Plataforma líder en Latinoamérica que ofrece infraestructura de pagos, billeteras digitales y programas de fidelización sobre blockchain para bancos, cooperativas e instituciones financieras en Colombia, Argentina y México.</li>
+    <li><strong>Sector Inmobiliario y Votación Digital:</strong> Ejecución de contratos inteligentes para compraventa fraccionada de inmuebles y sistemas de sufragio electrónico transparente a prueba de fraude.</li>
+  </ul>
+
+  <!-- Sección 12 -->
+  <h2>12. ¿Qué es una Criptomoneda?</h2>
+  <p>
+    Una <strong>criptomoneda</strong> es un activo digital intangible que utiliza algoritmos criptográficos para asegurar transacciones, controlar la creación de unidades adicionales y verificar la transferencia de fondos sin respaldo de gobiernos o bancos centrales.
+  </p>
+  <p>
+    A diferencia de las monedas fiat (pesos, dólares o euros), sometidas a la inflación y a políticas de devaluación estatal, criptoactivos emblemáticos como Bitcoin poseen una política monetaria preprogramada en código: una oferta máxima fija de <strong>21 millones de unidades</strong>, generando una genuina reserva de valor antiinflacionaria y desregulada.
+  </p>
+
+  <!-- Sección 13 -->
+  <h2>13. La Minería de Criptomonedas y los Algoritmos de Consenso</h2>
+  <p>
+    La <strong>minería</strong> es el proceso descentralizado por el cual los nodos especiales de la red (mineros) validan las transacciones pendientes, resuelven problemas criptográficos complejos y empaquetan los datos en un nuevo bloque.
+  </p>
+  <p>
+    En el algoritmo de <strong>Prueba de Trabajo (Proof-of-Work - PoW)</strong>, los mineros compiten ejecutando miles de millones de operaciones por segundo para dar con un valor aleatorio (`nonce`) que, al ser hasheado con el encabezado del bloque, arroje un hash con un determinado número de ceros iniciales fijado por la dificultad de la red. El primer minero en resolver el acertijo propaga el bloque a la red y recibe una <strong>recompensa en criptomonedas</strong> (50 BTC en 2009, la cual se reduce a la mitad cada cuatro años por el <em>Halving</em>). Este incentivo económico alinea los intereses de los participantes para que actúen con honestidad, pues atacar la red resultaría infinitamente más costoso que participar en su aseguramiento legítimo.
+  </p>
+
+  <!-- Sección 14 -->
+  <h2>14. Vinculación con el Desarrollo de Software (Simulador Funcional)</h2>
+  <p>
+    En consonancia con el Resultado de Aprendizaje <em>220501096-04: Codificar el software de acuerdo con el diseño establecido</em>, se ha desarrollado un simulador funcional completo de Blockchain en Python (`simulador_blockchain/blockchain.py`) acompañado de su batería de <strong>7 pruebas unitarias automatizadas (`test_blockchain.py`)</strong>.
+  </p>
+  <pre>
+# Fragmento del cálculo criptográfico SHA-256 en Block (Python):
+def compute_hash(self) -> str:
+    block_content = {
+        "index": self.index,
+        "timestamp": self.timestamp,
+        "transactions": [tx.to_dict() for tx in self.transactions],
+        "previous_hash": self.previous_hash,
+        "nonce": self.nonce
+    }
+    block_string = json.dumps(block_content, sort_keys=True)
+    return hashlib.sha256(block_string.encode('utf-8')).hexdigest()
+  </pre>
+  <p>
+    Al ejecutarse la prueba `test_tamper_detection_in_transaction_data`, el software verifica en milisegundos que cualquier modificación no autorizada en el contenido de un bloque rompe la validez del libro mayor, comprobando empíricamente la solidez técnica de nuestra tesis.
+  </p>
+
+  <!-- Sección 15 -->
+  <h2>15. Conclusiones Argumentativas</h2>
+  <div class="premise-box">
+    <div class="premise-title">Silogismo y Conclusión Lógica Formal</div>
+    <p class="no-indent">
+      • <strong>Premisa Mayor:</strong> Cualquier sistema de información descentralizado cuyos registros están encadenados por funciones hash deterministas unidireccionales y validados por consenso entre pares es matemáticamente inmutable y no requiere intermediarios fiduciarios.<br>
+      • <strong>Premisa Menor:</strong> La tecnología Blockchain opera sobre una red P2P estructurada en bloques enlazados criptográficamente mediante SHA-256 con consenso distribuido Proof-of-Work.<br>
+      • <strong>Conclusión Deductiva:</strong> Por lo tanto, la tecnología Blockchain es matemáticamente inmutable, segura frente a la adulteración y sustituye de manera irreversible la necesidad de intermediarios humanos centralizados en el desarrollo de software y la economía moderna.
+    </p>
+  </div>
+  <p>
+    En el ejercicio profesional del futuro Tecnólogo en Análisis y Desarrollo de Software del SENA, la integración de Blockchain con arquitecturas Web (Node.js, Express, Angular) y móviles (Android Studio, SQLite, Firebase) abre oportunidades extraordinarias para construir aplicaciones de alta confianza, transparentes y orientadas al desarrollo socioeconómico de Colombia.
+  </p>
+
+  <!-- Sección 16 -->
+  <h2>16. Referencias Bibliográficas (Normas APA 7ma Edición)</h2>
+  <div class="reference-list">
+    <div class="reference-item">Buterin, V. (2013). <em>Ethereum: A next-generation smart contract and decentralized application platform</em>. White Paper. https://ethereum.org/whitepaper/</div>
+    <div class="reference-item">Haber, S., & Stornetta, W. S. (1991). How to time-stamp a digital document. <em>Journal of Cryptology</em>, 4(2), 99–111. https://doi.org/10.1007/BF00196791</div>
+    <div class="reference-item">IBM. (s.f.). <em>What is blockchain? Understanding blockchain technology</em>. IBM Blockchain. https://www.ibm.com/topics/blockchain</div>
+    <div class="reference-item">Lovelle, J. M. C., Molano, J. I. R., & Marin, C. E. M. (2015). Introducción al Internet de las cosas. <em>Redes de Ingeniería</em>, 6(1), 1-14. https://revistas.udistrital.edu.co/index.php/REDES/article/view/8505/10464</div>
+    <div class="reference-item">Nakamoto, S. (2008). <em>Bitcoin: A Peer-to-Peer Electronic Cash System</em>. https://bitcoin.org/files/bitcoin-paper/bitcoin_es.pdf</div>
+    <div class="reference-item">Servicio Nacional de Aprendizaje - SENA. (2024). <em>Tecnologías emergentes y disruptivas</em> (Componente formativo). Grupo de Ejecución de la Formación Virtual, Regional Antioquia.</div>
+    <div class="reference-item">Tapscott, D., & Tapscott, A. (2017). <em>La revolución blockchain: Descubre cómo esta nueva tecnología transformará la economía global</em>. Ediciones Deusto.</div>
+    <div class="reference-item">Vidal, M. J., Carnota, O., & Rodríguez, A. (2019). Tecnologías e innovaciones disruptivas. <em>Educación Médica Superior</em>, 33(1), e1745.</div>
+  </div>
+
+  <footer style="margin-top: 40px; border-top: 1px solid #cbd5e1; padding-top: 15px; text-align: center; font-size: 8.5pt; color: #94a3b8;">
+    Documento Académico Oficial SENA | Tecnólogo en Análisis y Desarrollo de Software (ADSO) | Ficha 3235898 | Aprendiz: Ronald Fabian Mendoza Rodriguez
+  </footer>
+</div>
+
+</body>
+</html>
